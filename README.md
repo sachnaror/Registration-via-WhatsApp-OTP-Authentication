@@ -19,21 +19,6 @@ A Django web application for user registration and authentication with WhatsApp 
 - A WhatsApp API provider (e.g., Twilio) account
 - Git
 
-## Installation
-
-1. **Clone the Repository**
-
-   ```bash
-   git clone <repository_url>
-   cd whatsapplogin
-
-
-Here's the content for your README.md file:
-
-```markdown
-# WhatsApp Login System
-
-This project implements a user authentication system using WhatsApp for OTP verification.
 
 ## Setup
 
