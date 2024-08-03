@@ -45,8 +45,8 @@ ROOT_URLCONF = 'whatsapplogin.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
-        'APP_DIRS': True,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Optional, if using a global templates directory
+        'APP_DIRS': True,  # This allows Django to look inside app directories for templates
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',

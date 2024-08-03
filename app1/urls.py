@@ -1,15 +1,14 @@
-# accounts/urls.py
 from django.urls import path
 
-from . import views  # Import views from the current app
-from .views import dashboard_view, register_view
+from .views import (dashboard_view, login_view, logout_view, register_view,
+                    verify_otp_view)
 
 urlpatterns = [
-    path('login/', views.login_view, name='login'),  # Login view
-    path('register/', views.register_view, name='register'),  # Registration view
-    path('logout/', views.logout_view, name='logout'),  # Logout view
+    path('login/', login_view, name='login'),
+    path('register/', register_view, name='register'),
+    path('verify_otp/', verify_otp_view, name='verify_otp'),
+    path('logout/', logout_view, name='logout'),
     path('dashboard/', dashboard_view, name='dashboard'),
-    # Add more paths as needed
 ]
 
 
